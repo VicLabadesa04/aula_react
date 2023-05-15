@@ -1,4 +1,4 @@
-import react {useState} from 'react';
+import React, {useState} from 'react';
 import { View, Text, TouchableOpacity } from 'react-native';
 
 import styles from './styles';
@@ -6,13 +6,13 @@ import { useState } from 'react/ts5.0';
 
     export default function Index() {
 
-const {numero,setNumero}= useState=0; 
+const {Numero,setNumero}= useState=0; 
 
         var numero=0; 
 
         function addNunber (){
             numero++;
-           console.log(numer);
+           console.log(numero);
         }
   return (
     <View style={styles.container}>
@@ -20,7 +20,7 @@ const {numero,setNumero}= useState=0;
             Exemplo 3
         </Text>   
 
-<text> style={ styles.textCounter}>{numero}</text>
+<text> style={ styles.textCounter}= {numero}</text>
 
         <TouchableOpacity
          style = {styles.button}
