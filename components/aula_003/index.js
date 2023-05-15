@@ -20,7 +20,7 @@ const {Numero,setNumero}= useState=0;
             Exemplo 3
         </Text>   
 
-<text> style={ styles.textCounter}= {numero}</text>
+<text> style={styles.textCounter}= {numero}</text>
 
         <TouchableOpacity
          style = {styles.button}
