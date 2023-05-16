@@ -2,16 +2,17 @@ import React, {useState} from 'react';
 import { View, Text, TouchableOpacity } from 'react-native';
 
 import styles from './styles';
-import { useState } from 'react/ts5.0';
+
 
     export default function Index() {
+    
+const [numero,setNumero]= useState(0); 
 
-const {Numero,setNumero}= useState=0; 
-
-        var numero=0; 
+        var Numero=0; 
 
         function addNunber (){
-            numero++;
+            setNumero (numero + 1);
+            Numero++;
            console.log(numero);
         }
   return (
@@ -20,7 +21,15 @@ const {Numero,setNumero}= useState=0;
             Exemplo 3
         </Text>   
 
-<text> style={styles.textCounter}= {numero}</text>
+<TouchableOpacity
+onPress={() => alert ('Olá Mundo')}
+style = {styles.button}
+>
+    <text style= {styles.textButton}>
+        Diga "Olá, Mundo!"
+    </text>
+</TouchableOpacity>
+<Text style={styles.textCounter}> {numero}</Text>
 
         <TouchableOpacity
          style = {styles.button}
@@ -28,11 +37,29 @@ const {Numero,setNumero}= useState=0;
              onPress= {() => addNunber ()}
              >
              <Text style= {styles.textButton}>
-                Olá, Mundo!
+              Soma + 1
                 </Text>
             </TouchableOpacity>   
-            
-            
+    
+
+            <TouchableOpacity
+         style = {styles.button}
+         
+             onPress= {() => addNunber ()}
+             >
+             <Text style= {styles.textButton}>
+              ZERAR
+                </Text>
+            </TouchableOpacity>  
+            <TouchableOpacity
+         style = {styles.button}
+         
+             onPress= {() => addNunber ()}
+             >
+             <Text style= {styles.textButton}>
+              Reduz - 1
+                </Text>
+            </TouchableOpacity>        
     </View>
   );
 }
