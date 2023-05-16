@@ -29,6 +29,7 @@ style = {styles.button}
         Diga "Olá, Mundo!"
     </text>
 </TouchableOpacity>
+<View style={style.textCounter}>
 <Text style={styles.textCounter}> {numero}</Text>
 
         <TouchableOpacity
